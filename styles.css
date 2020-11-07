@@ -1,0 +1,72 @@
+:root {
+    --off-white: #f0efeb;
+    --olive: #a5a58d;
+    --dark-gray: #323232;
+    --dark-salmon: #cb997e;
+}
+
+html, body {
+    margin: 0;
+    background-color: var(--off-white);
+    font-family: 'Source Sans Pro', sans-serif;;
+    color: var(--dark-gray);
+}
+
+
+#landing {
+    /* background: url("./assets/flash-img-v3.png"); */
+    height: 100vh;
+    width: 100vw;
+    /* background-repeat: no-repeat; */
+    display: flex;
+    justify-content: space-between;
+    justify-items: flex-start;
+}
+
+
+.title {
+    background-color: var(--olive);
+    font-family: 'Oswald', sans-serif;
+    font-size: 54pt;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: var(--off-white);
+    /* mix-blend-mode: multiply; */
+}
+
+#intro {
+    position: relative;
+    right: -50%;
+    top: 40%;
+}
+
+#landing img  {
+    flex: 2;
+}
+
+#landing p {
+    font-size: 16pt;
+}
+
+#nav {
+    font-size: 26px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav span {
+    border-bottom: 4px solid rgba(203, 153, 126, 0);
+    transition: 0.3s;
+}
+
+#nav span:hover {
+    border-bottom: 4px solid rgba(203, 153, 126, 1);
+}
+
+#nav a {
+    text-decoration: none;
+    cursor: pointer;
+}
