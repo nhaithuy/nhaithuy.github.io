@@ -12,6 +12,11 @@ html, body {
     color: var(--dark-gray);
 }
 
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 
 #landing {
     /* background: url("./assets/flash-img-v3.png"); */
@@ -34,6 +39,10 @@ html, body {
     padding-bottom: 0px;
     color: var(--off-white);
     /* mix-blend-mode: multiply; */
+}
+
+.title.sm {
+    font-size: 44pt;
 }
 
 #intro {
@@ -69,4 +78,43 @@ html, body {
 #nav a {
     text-decoration: none;
     cursor: pointer;
+    color: var(--dark-gray);
+}
+
+#nav a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--dark-gray);
+}
+
+/* ABOUT */
+.content {
+    padding: 3%;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-top: 3%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.col1 {
+    flex: 0.7;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3%;
+    font-size: 26px;
+}
+
+.col2 {
+    flex: 3;
+    margin-left: 3%;
 }
