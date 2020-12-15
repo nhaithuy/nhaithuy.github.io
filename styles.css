@@ -75,7 +75,10 @@ p {
         background-blend-mode: overlay;
         /* background-size: cover; */
         background-position: 70% 30%;
+    }
 
+    #landing #left #name {
+        font-size: 60pt;
     }
 
     #landing #intro-group {
@@ -87,6 +90,7 @@ p {
     }
     #landing #intro-group #info {
         position: relative;
+        font-size: 18pt;
     }
 }
 
