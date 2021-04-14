@@ -1,0 +1,86 @@
+:root {
+    --antique-bronze: #6d6637;
+    --moss-green: #958e4b;
+    --misty-moss: #B4AC6A;
+    --coffee: #6F4E37;
+    --cafe-au-lait: #A67B5B;
+    --burlywood: #DEB887;
+    --antique-white: #FAEBD7;
+}
+
+body {
+    background-color: var(--coffee);
+}
+
+#banner {
+    /* height: 500px; */
+}
+
+#banner img {
+    width: 100%;
+}
+
+#float-banner {
+    background-color: var(--burlywood);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--coffee);
+    width: 70%;
+}
+
+#title {
+    color: var(--antique-white);
+    display: flex;
+    justify-content: center;
+    padding: 2% 14%;
+}
+
+#title h1 {
+    font-family: 'MedievalSharp', cursive;
+    margin: 0;
+}
+
+#container {
+    padding: 0% 14% 2% 14%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    #container {
+        padding: 0% 5% 2% 5%;
+    }
+    #title {
+        padding: 2% 5%;
+    }
+}
+
+#content {
+    background-color: var(--antique-white);
+    width: 100%;
+    padding: 3% 5%;
+    border-radius: 2px;
+    color: var(--coffee);
+}
+
+.question {
+    /* color: var(--antique-bronze); */
+    margin-bottom: 30px;
+}
+
+.question img {
+    width: 60%;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.btn-primary {
+    background-color: var(--moss-green);
+    border: 1px solid var(--moss-green);
+}
+
+.btn-primary:hover {
+    background-color: var(--misty-moss);
+    border: 1px solid var(--misty-moss);
+}
