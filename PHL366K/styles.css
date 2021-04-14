@@ -48,8 +48,11 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
-    body {
-        font-size: 1.5rem;
+    body, .btn {
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: xxx-large;
     }
     #container {
         padding: 0% 5% 2% 5%;
