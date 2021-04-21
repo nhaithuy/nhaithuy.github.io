@@ -7,7 +7,8 @@
   <title>PHL 366K Final Project</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./styles.css">
@@ -32,43 +33,67 @@
 
     <div id="container">
       <div id="content">
-        <p>This quiz will help determine which Existentialist Philosopher most identify with you.
+        <p id="prompt-text">This quiz will help determine which Existentialist Philosopher most identify with you.
         Relax, sit back, and answer these questions as they relate to you and your personality.</p>
 
         <!-- Question 1 -->
         <div class="question">
           <h2>Question 1</h2>
-          <p>Some question here?</p>
+          <p><b>Which of the following you will most agree with if life has no intrinsic meaning?</b></p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Default radio
+            <input class="form-check-input" type="radio" name="radio" value="1 camus">
+            <label class="form-check-label" for="q1a1">
+              We can give life meaning through revolt – struggling against the irrationality and injustice we find around us
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Second default radio
+            <input class="form-check-input" type="radio" name="radio" value="1 kierkegaard">
+            <label class="form-check-label" for="q1a2">
+              A religious faith that involves taking leaps (as opposed to drawing rational conclusions) can give one’s meaning in life
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="1 nietzsche">
+            <label class="form-check-label" for="q1a3">
+              Enhancing one’s will of power and achieving self-expression as fully as possible within the environment can make one’s life meaningful
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="1 heidegger">
+            <label class="form-check-label" for="q1a4">
+              We can find meaning in life through living in an authentic way, know about yourself and not follow the tendency of being like everybody else
             </label>
           </div>
         </div>
+        
         <!-- End Question 1 -->
 
         <!-- Question 2 -->
         <div class="question">
           <h2>Question 2</h2>
-          <p>This question has an image with it.</p>
-          <img src="./assets/school_of_athens.jpg">
+          <p><b>Which of the following would you do when facing grief and frustration?</b></p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Default radio
+            <input class="form-check-input" type="radio" name="radio" value="2 nietzsche">
+            <label class="form-check-label" for="q2a1">
+              Negate and judge others to feel better
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Second default radio
+            <input class="form-check-input" type="radio" name="radio" value="2 heidegger">
+            <label class="form-check-label" for="q2a2">
+              Watch or recall what others will do in the situation and behave like them
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="2 camus">
+            <label class="form-check-label" for="q2a3">
+              Overcome the grief and frustration with people you love and trust
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="2 kierkegaard">
+            <label class="form-check-label" for="q2a4">
+              Try to leave the problem behind and devoted to the pleasures of the moment
             </label>
           </div>
         </div>
@@ -77,29 +102,109 @@
         <!-- Question 3 -->
         <div class="question">
           <h2>Question 3</h2>
-          <p>Some question here. This question is longer. More and more text. Some random text.</p>
+          <p><b>Which of the following statements about God you will most agree with?</b></p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Default radio
+            <input class="form-check-input" type="radio" name="radio" value="3 kierkegaard">
+            <label class="form-check-label" for="q3a1">
+              Every individual has a unique relationship with God
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Second default radio
+            <input class="form-check-input" type="radio" name="radio" value="3 heidegger">
+            <label class="form-check-label" for="q3a2">
+              We can’t know if God exists, we can only know our existence
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="3 nietzsche">
+            <label class="form-check-label" for="q3a3">
+              God is dead and we are living in the shadow of God
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="3 camus">
+            <label class="form-check-label" for="q3a4">
+              We can’t just rely on God to solve the problem
             </label>
           </div>
         </div>
         <!-- End Question 3 -->
+
+        <!-- Question 4 -->
+        <div class="question">
+          <h2>Question 4</h2>
+          <p><b>It’s your first day of work at your new job. Which of the following options best identifies you?</b></p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="4 heidegger">
+            <label class="form-check-label" for="q4a1">
+              My co-workers / managers started the general small talk to me. I rolled my eyes (internally). I dislike small talk very much
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="4 nietzsche">
+            <label class="form-check-label" for="q4a2">
+              I carefully prepared my look. I wanted to display my style - I am unique, I dislike fitting into molds
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="4 camus">
+            <label class="form-check-label" for="q4a3">
+              I am ready for the grind! Starting a new job can be tedious, as there is a lot to learn, but I am ready to see myself progress and be immersed in the learning experience
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="4 kierkegaard">
+            <label class="form-check-label" for="q4a4">
+              Everyone around me talks about imposter syndrome, but I think everything will be okay. Ultimately, it is what I am to do in life, not what I must know. God will guide me through 
+            </label>
+          </div>
+        </div>
+        <!-- End Question 4 -->
+
+        <!-- Question 5 -->
+        <div class="question">
+          <h2>Question 5</h2>
+          <p><b>At some point in life, you suddenly feel burnt out, unmotivated, and purposeless. You decide to re-evaluate your life. Which of the following is most likely the cause of these negative feelings?</b></p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="5 nietzsche">
+            <label class="form-check-label" for="q5a1">
+              I have been following what is expected of me, what is deemed “good” in society nowadays, but it is not what I want for myself. I haven’t been able to freely express myself 
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="5 kierkegaard">
+            <label class="form-check-label" for="q5a2">
+              I have been chasing after a fun and enjoyable life, and those activities entertained me in the moment, but now I feel like I’ve hit rock bottom: everything no longer entertains me, I am bored 
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="5 camus">
+            <label class="form-check-label" for="q5a3">
+              I have not been engaged in my living experience. I feel like I have just been “spectating” my life, as if I am floating through it 
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" value="5 heidegger">
+            <label class="form-check-label" for="q5a4">
+              I have always been curious about different things, but perhaps this is just idle curiosity: I check things out for the purpose of checking things out, not having a particular goal in mind 
+            </label>
+          </div>
+        </div>
+        <!-- End Question 5 -->
+
         <!-- Finish Quiz -->
-        <button type="button" class="btn btn-primary">See your results!</button>
+        <button type="button" class="btn btn-primary" onclick="view_result()">See your results!</button>
+
+        <div id="result"></div>
       </div>
       
       
     </div>
     
     
-</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>      
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 
 </html>
