@@ -90,3 +90,18 @@ body {
     background-color: var(--misty-moss);
     border: 1px solid var(--misty-moss);
 }
+
+#reset {
+    display: none;
+    margin: 20px 0 0 0;
+}
+
+#res-img {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#res-img img {
+    width: 100%;
+}
