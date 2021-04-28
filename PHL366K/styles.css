@@ -91,15 +91,18 @@ body {
     border: 1px solid var(--misty-moss);
 }
 
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
 #reset {
     display: none;
     margin: 20px 0 0 0;
 }
 
 #res-img {
-    display: flex;
     justify-content: center;
-    padding: 20px 0;
 }
 
 #res-img img {

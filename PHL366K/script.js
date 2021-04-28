@@ -57,6 +57,7 @@ function view_result() {
     // console.log(res_string)
     $('#view-result').css("display", "none")
     $('#reset').css("display", "block")
+    $('res-img').css("padding", "20px 0")
 }
 
 function reset() {
