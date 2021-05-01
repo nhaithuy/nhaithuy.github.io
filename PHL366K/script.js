@@ -28,7 +28,7 @@ var curr_question = 1;
 $('.form-check-input').click(function() {
     // console.log(result)
     var selectedVal = $(this).val().split(" ")
-    console.log(selectedVal)
+    // console.log(selectedVal)
     const question = parseInt(selectedVal[0], 10)
     const philosopher = selectedVal[1]
 
@@ -60,8 +60,10 @@ function view_result() {
     // console.log(res_string)
     $('#view-result').css("display", "none")
     $('.toggle-questions').css("display", "none")
+    $('.nav').css("display", "none")
     $('#reset').css("display", "block")
-    $('#chart_div').css("display", "block")
+    calculate_result()
+    $('#chart-container').css("display", "block")
     $('res-img').css("padding", "20px 0")
 }
 
@@ -154,5 +156,56 @@ function toggle_question(is_next) {
 
 //       chart.draw(data, options);
 //     }
+
+function calculate_result() {
+    const labels = [
+        'Camus',
+        'Kierkegaard',
+        'Nietzsche',
+        'Heidegger',
+        'Sartre'
+    ];
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'Your Responses',
+        
+        data: [count["camus"], count["kierkegaard"], count["nietzsche"], count["heidegger"], count["sartre"]],
+        backgroundColor: [
+          'rgb(109, 102, 55)',
+          'rgb(111, 78, 55)',
+          'rgb(180, 172, 106)',
+          'rgb(211, 184, 135)',
+          'rgb(149, 142, 75)'
+        ],
+        borderColor: [
+          'rgb(109, 102, 55)',
+          'rgb(111, 78, 55)',
+          'rgb(180, 172, 106)',
+          'rgb(211, 184, 135)',
+          'rgb(149, 142, 75)'
+        ],
+        borderWidth: 1
+      }]
+    };
+    
+    const config = {
+        type: 'bar',
+        data: data,
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            },
+          }
+        },
+      };
+    
+      var myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+      $('#myChart').css("height", "100%")
+}
 
 

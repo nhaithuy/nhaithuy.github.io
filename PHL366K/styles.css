@@ -187,8 +187,18 @@ a:focus {
 
 #res-img img {
     width: 100%;
+    margin-bottom: 30px;
 }
 
 #chart_div {
     display: none;
+}
+
+#chart-container {
+    display: none;
+}
+
+#myChart {
+    height: 0;
+    margin: 20px 0;
 }

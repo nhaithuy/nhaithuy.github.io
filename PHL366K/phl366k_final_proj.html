@@ -20,6 +20,8 @@
   <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
 </head>
 
@@ -443,6 +445,11 @@
         <div id="res-text"></div>
         <div id="res-img"></div>
         <div id="chart_div"></div>
+        <div id="chart-container">
+          <p>Here is a breakdown of your responses (out of 10 questions).</p>
+          <canvas id="myChart"></canvas>
+        </div>
+        
         <div class="btn-container">
           <button id="reset" type="button" class="btn btn-primary" onclick="reset()">Take the
             Quiz again</button>
