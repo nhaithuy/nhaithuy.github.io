@@ -30,7 +30,7 @@
   </div>
 
   <div id="title">
-    <h1>Existentialism and You: which Existentialist Philosopher do you Most Identify with?</h1>
+    <h1>Existentialism and You: <br> which Existentialist Philosopher do you Most Identify with?</h1>
   </div>
 
   <div id="container">
@@ -38,43 +38,88 @@
       <p id="prompt-text">This quiz will help determine which Existentialist Philosopher most identify with you.
         Relax, sit back, and answer these questions as they relate to you and your personality.</p>
 
+      <ul class="nav nav-tabs">
+        <li class="nav-item" onclick="switch_tab(1)">
+          <a id="1" class="nav-link active" aria-current="page">1</a>
+        </li>
+        <li class="nav-item" onclick="switch_tab(2)">
+          <a id="2" class="nav-link">2</a>
+        </li>
+        <li class="nav-item" onclick="switch_tab(3)">
+          <a id="3" class="nav-link">3</a>
+        </li>
+        <li class="nav-item" onclick="switch_tab(4)">
+          <a id="4" class="nav-link" aria-current="page">4</a>
+        </li>
+        <li class="nav-item" onclick="switch_tab(5)">
+          <a id="5" class="nav-link">5</a>
+        </li>
+        <li class="nav-item" onclick="switch_tab(6)">
+          <a id="6" class="nav-link">6</a>
+        </li>
+        <li class="nav-item" onclick="switch_tab(7)">
+          <a id="7" class="nav-link">7</a>
+        </li>
+        <li class="nav-item" onclick="switch_tab(8)">
+          <a id="8" class="nav-link" aria-current="page">8</a>
+        </li>
+        <li class="nav-item" onclick="switch_tab(9)">
+          <a id="9" class="nav-link">9</a>
+        </li>
+        <li class="nav-item" onclick="switch_tab(10)">
+          <a id="10" class="nav-link">10</a>
+        </li>
+      </ul>
+
       <!-- Question 1 -->
-      <div class="question">
+      <div id="q1" class="question active">
         <h2>Question 1</h2>
-        <p><b>Which of the following you will most agree with if life has no intrinsic meaning?</b></p>
+        <figure>
+          <img src="./assets/q1.JPG" alt="The Voyage of Life painting">
+          <figcaption>The Voyage of Life by Thomas Cole.</figcaption>
+        </figure>
+
+        <p><b>Imagine yourself being a middle-age individual. You’ve been through a lot in life. It gets repetitive.
+            Most of your friends agree that life has no intrinsic meaning; we’re merely just machines going about our
+            duties. <br><br>But you disagree. You think that there is a way to find meaning in life. Which of the
+            following
+            aligns with your philosophy the most?</b></p>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="radio 1" value="1 camus">
           <label class="form-check-label" for="q1a1">
-            We can give life meaning through revolt – struggling against the irrationality and injustice we find around
+            Life is unfair, but we can give life meaning through fighting against the irrationality and injustice we
+            find around
             us
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="radio 1" value="1 kierkegaard">
           <label class="form-check-label" for="q1a2">
-            A religious faith that involves taking leaps (as opposed to drawing rational conclusions) can give one’s
-            meaning in life
+            I have my full faith in my religion to back me up. I try not to draw rational conclusions to morality, but
+            rather trust that God will guide me through
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="radio 1" value="1 nietzsche">
           <label class="form-check-label" for="q1a3">
-            Enhancing one’s will of power and achieving self-expression as fully as possible within the environment can
-            make one’s life meaningful
+            I try to enhance my will of power and achieve self-expression as fully as possible
+            within my environment. I think of my traits and talents as an components and materials that I can use to
+            build a beautiful artwork unique to me
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="radio 1" value="1 heidegger">
           <label class="form-check-label" for="q1a4">
-            We can find meaning in life through living in an authentic way, know about yourself and not follow the
-            tendency of being like everybody else
+            I am my own authentic individual: I know yourself and what matters to me most in life. I
+           try not to be like everybody else
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="radio 1" value="1 sartre">
           <label class="form-check-label" for="q1a4">
-            We are completely free. We have the ability to transcend our present circumstances. We make ourselves what
-            we are through our projects.
+            I am completely free in how I interpret the world and in my responses to the present
+            circumstances. Because of that, I can make myself what I want to be through my projects
+            and decisions
           </label>
         </div>
       </div>
@@ -82,8 +127,12 @@
       <!-- End Question 1 -->
 
       <!-- Question 2 -->
-      <div class="question">
+      <div id="q2" class="question">
         <h2>Question 2</h2>
+        <figure>
+          <img src="assets/q2.jpg" alt="The Scream">
+          <figcaption>The Scream by Edvard Munch.</figcaption>
+        </figure>
         <p><b>Which of the following would you do when facing grief and frustration?</b></p>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="radio 2" value="2 nietzsche">
@@ -119,8 +168,12 @@
       <!-- End Question 2 -->
 
       <!-- Question 3 -->
-      <div class="question">
+      <div id="q3" class="question">
         <h2>Question 3</h2>
+        <figure>
+          <img src="assets/q3.jpg" alt="The Creation of Adam">
+          <figcaption>The Creation of Adam by Michelangelo.</figcaption>
+        </figure>
         <p><b>Which of the following statements about God you will most agree with?</b></p>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="radio 3" value="3 kierkegaard">
@@ -156,7 +209,7 @@
       <!-- End Question 3 -->
 
       <!-- Question 4 -->
-      <div class="question">
+      <div id="q4" class="question">
         <h2>Question 4</h2>
         <p><b>It’s your first day of work at your new job. Which of the following options best
             identifies you?</b></p>
@@ -197,7 +250,7 @@
       <!-- End Question 4 -->
 
       <!-- Question 5 -->
-      <div class="question">
+      <div id="q5" class="question">
         <h2>Question 5</h2>
         <p><b>At some point in life, you suddenly feel burnt out, unmotivated, and purposeless. You decide to
             re-evaluate your life. Which of the following is most likely the cause of these negative feelings?</b></p>
@@ -240,7 +293,7 @@
       <!-- End Question 5 -->
 
       <!-- Question 6 -->
-      <div class="question">
+      <div id="q6" class="question">
         <h2>Question 6</h2>
         <p><b>Your friends and you are trying to decide on which movie to watch. Which of the following synopsis are you
             most interested in?</b></p>
@@ -280,7 +333,7 @@
       <!-- End Question 6 -->
 
       <!-- Question 7 -->
-      <div class="question">
+      <div id="q7" class="question">
         <h2>Question 7</h2>
         <p><b>Which quote resonates most with you?</b></p>
         <div class="form-check">
@@ -320,7 +373,7 @@
       <!-- End Question 7 -->
 
       <!-- Question 8 -->
-      <div class="question">
+      <div id="q8" class="question">
         <h2>Question 8</h2>
         <p><b>In which way would you most find meaning in life?</b></p>
         <div class="form-check">
@@ -356,8 +409,82 @@
       </div>
       <!-- End Question 8 -->
 
+      <!-- Question 9 -->
+      <div id="q9" class="question">
+        <h2>Question 9</h2>
+        <p><b>In which way would you most find meaning in life?</b></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio 9" value="9 kierkegaard">
+          <label class="form-check-label" for="q9a1">
+            Through a personal, subjective relationship with God
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio 9" value="9 camus">
+          <label class="form-check-label" for="q8a2">
+            Create meaning through accepting the absurdity of life
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio 9" value="9 nietzsche">
+          <label class="form-check-label" for="q9a3">
+            By establishing your own values and living your life around them
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio 9" value="9 sartre">
+          <label class="form-check-label" for="q9a3">
+            Create yourself through projects in which you can transcend your circumstances
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio 9" value="9 heidegger">
+          <label class="form-check-label" for="q9a4">
+            Through focusing on being in the world authentically and intentionally
+          </label>
+        </div>
+      </div>
+      <!-- End Question 9 -->
+
+      <!-- Question 9 -->
+      <div id="q10" class="question">
+        <h2>Question 10</h2>
+        <p><b>In which way would you most find meaning in life?</b></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio 10" value="10 kierkegaard">
+          <label class="form-check-label" for="q10a1">
+            Through a personal, subjective relationship with God
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio 10" value="10 camus">
+          <label class="form-check-label" for="q10a2">
+            Create meaning through accepting the absurdity of life
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio 10" value="10 nietzsche">
+          <label class="form-check-label" for="q10a3">
+            By establishing your own values and living your life around them
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio 10" value="10 sartre">
+          <label class="form-check-label" for="q10a3">
+            Create yourself through projects in which you can transcend your circumstances
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio 10" value="10 heidegger">
+          <label class="form-check-label" for="q10a4">
+            Through focusing on being in the world authentically and intentionally
+          </label>
+        </div>
+      </div>
+      <!-- End Question 10 -->
+
       <!-- Finish Quiz -->
-      <div id="result">
+      <!-- <div id="result">
         <div id="res-text"></div>
         <div id="res-img"></div>
       </div>
@@ -367,9 +494,18 @@
           results!</button>
         <button id="reset" type="button" class="btn btn-primary" onclick="reset()">Take the
           Quiz again</button>
-      </div>
-      
+        
+      </div> -->
 
+      <!-- Next / Prev Question -->
+      <div class="toggle-questions">
+        <div class="btn-group">
+          <button id="prev-question" type="button" class="btn btn-primary"
+          onclick="toggle_question(false)">« Previous</button>
+          <button id="next-question" type="button" class="btn btn-primary"
+          onclick="toggle_question(true)">Next »</button>
+        </div>
+      </div>
 
     </div>
 

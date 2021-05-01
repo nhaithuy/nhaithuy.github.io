@@ -12,6 +12,19 @@ body {
     background-color: var(--coffee);
 }
 
+h2 {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--moss-green);
+}
+
+a:hover,
+a:focus {
+    color: var(--misty-moss);
+}
+
 #banner {
     /* height: 500px; */
 }
@@ -33,30 +46,36 @@ body {
     color: var(--antique-white);
     display: flex;
     justify-content: center;
-    padding: 2% 14%;
+    padding: 2% 24%;
 }
 
 #title h1 {
     font-family: 'MedievalSharp', cursive;
     margin: 0;
+    text-align: center;
 }
 
 #container {
-    padding: 0% 14% 2% 14%;
+    padding: 0% 24% 2% 24%;
     display: flex;
     justify-content: center;
 }
 
 @media only screen and (max-width: 1000px) {
-    body, .btn {
+
+    body,
+    .btn {
         font-size: 2rem;
     }
+
     h1 {
         font-size: xxx-large;
     }
+
     #container {
         padding: 0% 5% 2% 5%;
     }
+
     #title {
         padding: 2% 5%;
     }
@@ -70,28 +89,75 @@ body {
     color: var(--coffee);
 }
 
+.nav-tabs {
+    border-bottom: 1px solid var(--misty-moss);
+    margin: 20px 0;
+    transition: 0.3s;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: var(--misty-moss);
+    color: var(--antique-white);
+    border: 1px solid var(--misty-moss);
+    border-bottom: 1px solid var(--misty-moss);
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border: 1px solid var(--misty-moss);
+    border-bottom: 1px solid var(--misty-moss);
+    cursor: pointer;
+}
+
 .question {
     /* color: var(--antique-bronze); */
-    margin-bottom: 30px;
-}
-
-.question img {
-    width: 60%;
     margin-bottom: 20px;
-    border-radius: 2px;
+    display: none;
+
 }
 
-.btn-primary {
+.question.active {
+    transition: 0.3s;
+    transform: translateX(-1px);
+    display: block;
+}
+
+.question figure img {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.question figure figcaption {
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+}
+
+.btn-primary,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle,
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary:focus-visible {
+    background-color: var(--misty-moss);
+    border: 1px solid var(--misty-moss);
+    box-shadow: none;
+}
+
+.btn-primary:hover {
     background-color: var(--moss-green);
     border: 1px solid var(--moss-green);
 }
 
-.btn-primary:hover {
-    background-color: var(--misty-moss);
-    border: 1px solid var(--misty-moss);
+.btn-container {
+    display: flex;
+    justify-content: center;
 }
 
-.btn-container {
+.toggle-questions {
     display: flex;
     justify-content: center;
 }

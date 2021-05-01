@@ -77,3 +77,44 @@ function get_best_match_philosopher() {
     return philosopher
 }
 
+// switching tabs
+function switch_tab(q) {
+    const nav_items = $('.nav-link')
+
+    for (var i = 0; i < nav_items.length; i++) {
+        var nav_item = nav_items[i]
+        if (nav_item.classList.contains("active")) {
+            nav_item.classList.remove("active")
+
+            // hide this question. ID is index + 1
+            $('#q' + (i + 1)).removeClass('active')
+        }
+    }
+
+    $('#' + q).addClass('active')
+
+    // show the other question
+    $('#q' + q).addClass('active')
+}
+
+function toggle_question(is_next) {
+    const questions = $('.question')
+
+    for (var i = 0; i < questions.length; i++) {
+        if (questions[i].classList.contains("active")) {
+            if (is_next) {
+                if (i + 2 <= 10) {
+                    switch_tab(i + 2)
+                }
+            } else {
+                if (i >= 1) {
+                    switch_tab(i)
+                }
+                
+            }
+            return
+        }
+    }
+}
+
+
