@@ -156,13 +156,32 @@ a:focus {
     border: 1px solid var(--moss-green);
 }
 
+.btn-secondary,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle,
+.btn-secondary.focus,
+.btn-secondary:focus,
+.btn-secondary:focus-visible {
+    color: var(--coffee);
+    background-color: var(--burlywood);
+    border: 1px solid var(--burlywood);
+    box-shadow: none;
+    margin: 20px 0 0 0;
+}
+
+.btn-secondary:hover {
+    color: var(--antique-white);
+    background-color: var(--cafe-au-lait);
+    border: 1px solid var(--cafe-au-lait);
+}
+
 .btn-container {
     display: flex;
     justify-content: center;
 }
 
 #view-result {
-    color: var(--cafe-au-lait);
     text-align: center;
     cursor: pointer;
 }
