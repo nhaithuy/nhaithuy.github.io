@@ -20,6 +20,10 @@ a {
     color: var(--moss-green);
 }
 
+img {
+    border-radius: 5px;
+}
+
 a:hover,
 a:focus {
     color: var(--misty-moss);
@@ -157,6 +161,16 @@ a:focus {
     justify-content: center;
 }
 
+#view-result {
+    color: var(--cafe-au-lait);
+    text-align: center;
+    cursor: pointer;
+}
+
+#view-result h4 {
+    margin: 15px 0;
+}
+
 .toggle-questions {
     display: flex;
     justify-content: center;
@@ -173,4 +187,8 @@ a:focus {
 
 #res-img img {
     width: 100%;
+}
+
+#chart_div {
+    display: none;
 }

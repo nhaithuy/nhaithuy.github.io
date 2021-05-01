@@ -7,6 +7,9 @@ var result = {
     5: null,
     6: null,
     7: null,
+    8: null,
+    9: null,
+    10: null
 }
 
 var count = {
@@ -25,7 +28,7 @@ var curr_question = 1;
 $('.form-check-input').click(function() {
     // console.log(result)
     var selectedVal = $(this).val().split(" ")
-    // console.log(selectedVal)
+    console.log(selectedVal)
     const question = parseInt(selectedVal[0], 10)
     const philosopher = selectedVal[1]
 
@@ -56,7 +59,9 @@ function view_result() {
     $('#res-img').html(img_string)
     // console.log(res_string)
     $('#view-result').css("display", "none")
+    $('.toggle-questions').css("display", "none")
     $('#reset').css("display", "block")
+    $('#chart_div').css("display", "block")
     $('res-img').css("padding", "20px 0")
 }
 
@@ -103,7 +108,7 @@ function toggle_question(is_next) {
     for (var i = 0; i < questions.length; i++) {
         if (questions[i].classList.contains("active")) {
             if (is_next) {
-                if (i + 2 <= 10) {
+                if (i + 2 <= 8) {
                     switch_tab(i + 2)
                 }
             } else {
@@ -116,5 +121,38 @@ function toggle_question(is_next) {
         }
     }
 }
+
+
+// testing Google Chart
+// google.charts.load('current', {packages: ['corechart', 'bar']});
+// google.charts.setOnLoadCallback(drawBasic);
+
+// function drawBasic() {
+
+//       var data = google.visualization.arrayToDataTable([
+//         ['City', '2010 Population',],
+//         ['New York City, NY', 8175000],
+//         ['Los Angeles, CA', 3792000],
+//         ['Chicago, IL', 2695000],
+//         ['Houston, TX', 2099000],
+//         ['Philadelphia, PA', 1526000]
+//       ]);
+
+//       var options = {
+//         title: 'Population of Largest U.S. Cities',
+//         chartArea: {width: '100%'},
+//         hAxis: {
+//           title: 'Total Population',
+//           minValue: 0
+//         },
+//         vAxis: {
+//           title: 'City'
+//         }
+//       };
+
+//       var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+//       chart.draw(data, options);
+//     }
 
 
