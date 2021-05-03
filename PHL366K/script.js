@@ -7,9 +7,7 @@ var result = {
     5: null,
     6: null,
     7: null,
-    8: null,
-    9: null,
-    10: null
+    8: null
 }
 
 var count = {
@@ -43,13 +41,33 @@ $('.form-check-input').click(function() {
 })
 
 function view_result() {
+    
+    // check that all questions has been completed
+    var incomplete = []
+    var incomplete_str = ""
+
+    for (var i = 1; i < 9; i++) {
+        if (result[i] == null) {
+            incomplete.push(i)
+            incomplete_str += "<li>Question " + i + "</li>"
+        }
+    }
+
+    if (incomplete.length != 0) {
+        document.getElementById("incomplete-q").innerHTML = "You have not completed the following questions: <ul>" + incomplete_str + "</ul>"
+        $('.alert').css('display', 'block')
+        return;
+    }
+
+    $('.alert').css('display', 'none')
     // hide all questions
     $('.question').css("display", "none")
-    $('#prompt-text').html("Below is your result.")
+    $('#prompt-text').html("Based on your answer is your result. Please keep in mind that these questions only reflect parts of the philosopher's work.")
 
     // get match
     var best_match = get_best_match_philosopher()
     const img_string = "<img src=\"./assets/" + best_match + ".jpg\" >"
+    // img_string += "<p>You can read more about this philosopher <a target='blank' href='https://plato.stanford.edu/entries/'" + best_match + "'here</a>.<p>"
     best_match = best_match.charAt(0).toUpperCase() + best_match.slice(1)
     // console.log(result)
 
@@ -84,8 +102,12 @@ function get_best_match_philosopher() {
     return philosopher
 }
 
+
 // switching tabs
 function switch_tab(q) {
+    // hide alert
+    $('.alert').css('display', 'none')
+
     const nav_items = $('.nav-link')
 
     for (var i = 0; i < nav_items.length; i++) {

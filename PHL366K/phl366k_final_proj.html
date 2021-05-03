@@ -115,7 +115,7 @@
           <input class="form-check-input" type="radio" name="radio 1" value="1 heidegger">
           <label class="form-check-label" for="q1a4">
             I am my own authentic individual: I know yourself and what matters to me most in life. I
-           try not to be like everybody else
+            try not to be like everybody else
           </label>
         </div>
         <div class="form-check">
@@ -137,7 +137,8 @@
           <img src="assets/q2.jpg" alt="The Scream">
           <figcaption>The Scream by Edvard Munch.</figcaption>
         </figure>
-        <p><b>Which of the following do you think is <i>not</i> the ideal reaction when facing grief and frustration?</b></p>
+        <p><b>Which of the following do you think is <i>not</i> the ideal reaction when facing grief and
+            frustration?</b></p>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="radio 2" value="2 nietzsche">
           <label class="form-check-label" for="q2a1">
@@ -310,7 +311,8 @@
         <h2>Question 6</h2>
         <figure>
           <img src="assets/q6.jpg" alt="Movie Theatre">
-          <figcaption>Photograph taken by Jake Hill at Duke of York's Picturehouse, Brighton, United Kingdom.</figcaption>
+          <figcaption>Photograph taken by Jake Hill at Duke of York's Picturehouse, Brighton, United Kingdom.
+          </figcaption>
         </figure>
         <p><b>Your friends and you are trying to decide on which movie to watch. Which of the following synopsis are you
             most interested in?</b></p>
@@ -438,9 +440,8 @@
         </div>
         <!-- Finish Quiz -->
         <div class="btn-container">
-          <button type="button" class="btn btn-secondary" id="view-result"
-          onclick="view_result()">See your Results!
-            </button>
+          <button type="button" class="btn btn-secondary" id="view-result" onclick="view_result()">See your Results!
+          </button>
         </div>
       </div>
       <!-- End Question 8 -->
@@ -452,12 +453,12 @@
           <p>Here is a breakdown of your responses (out of 10 questions).</p>
           <canvas id="myChart"></canvas>
         </div>
-        
+
         <div class="btn-container">
           <button id="reset" type="button" class="btn btn-primary" onclick="reset()">Take the
             Quiz again</button>
         </div>
-        
+
       </div>
 
       <!-- Question 9 -->
@@ -534,16 +535,23 @@
       </div> -->
       <!-- End Question 10 -->
 
-      
+
 
       <!-- Next / Prev Question -->
       <div class="toggle-questions">
         <div class="btn-group">
-          <button id="prev-question" type="button" class="btn btn-primary"
-          onclick="toggle_question(false)">« Previous</button>
-          <button id="next-question" type="button" class="btn btn-primary"
-          onclick="toggle_question(true)">Next »</button>
+          <button id="prev-question" type="button" class="btn btn-primary" onclick="toggle_question(false)">«
+            Prev</button>
+          <button id="next-question" type="button" class="btn btn-primary" onclick="toggle_question(true)">Next
+            »</button>
         </div>
+      </div>
+
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <p id="incomplete-q"></p>You need to answer all questions before seeing the results.
+        <button type="button" class="close" aria-label="Close" onclick="$('.alert').css('display', 'none')">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
 
     </div>
@@ -559,7 +567,7 @@
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="script.js"></script>
-  
+
 </body>
 
 </html>
