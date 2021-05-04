@@ -7,7 +7,9 @@ var result = {
     5: null,
     6: null,
     7: null,
-    8: null
+    8: null,
+    9: null,
+    10: null
 }
 
 var count = {
@@ -46,7 +48,7 @@ function view_result() {
     var incomplete = []
     var incomplete_str = ""
 
-    for (var i = 1; i < 9; i++) {
+    for (var i = 1; i < 11; i++) {
         if (result[i] == null) {
             incomplete.push(i)
             incomplete_str += "<li>Question " + i + "</li>"
@@ -132,7 +134,7 @@ function toggle_question(is_next) {
     for (var i = 0; i < questions.length; i++) {
         if (questions[i].classList.contains("active")) {
             if (is_next) {
-                if (i + 2 <= 8) {
+                if (i + 2 <= 10) {
                     switch_tab(i + 2)
                 }
             } else {
